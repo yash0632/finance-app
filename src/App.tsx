@@ -12,6 +12,12 @@ function App() {
         <Route path="/" element={<Layout/>}>
           <Route index element={<DashBoard/>}/>
           <Route path="/DepartmentUnits" element={<DepartmentUnitsPage/>}/>
+          <Route path="/*" element={
+            <div className="flex w-screen h-screen justify-center items-center">
+              <h1>404 Not Found</h1>
+            </div>
+            
+          }/>
         </Route>
       </Routes>
     </BrowserRouter>
